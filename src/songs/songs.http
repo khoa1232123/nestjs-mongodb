@@ -1,0 +1,30 @@
+### Create a song
+POST http://localhost:3000/songs
+Content-Type: application/json
+
+{
+  "title": "Love me like you do",
+  "releasedDate": "2023-01-01",
+  "duration": "4:30",
+  "lyrics": "Why do why do you love me, why do you love me"
+}
+
+### Get all songs
+GET http://localhost:3000/songs
+
+### Get a song by id
+GET http://localhost:3000/songs/66e1c9656294aaa5b4e94d69
+
+### Update a song
+PATCH http://localhost:3000/songs/66e1c9656294aaa5b4e94d69
+Content-Type: application/json
+
+{
+  "title": "Why do you love me 2",
+  "releasedDate": "2024-01-01",
+  "duration": "4:30",
+  "lyrics": "momo why do you love me"
+}
+
+### Delete a song
+DELETE http://localhost:3000/songs/66e1cc5007e75ea93f294549

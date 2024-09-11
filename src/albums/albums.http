@@ -1,0 +1,14 @@
+### create album
+POST http://localhost:3000/albums
+Content-Type: application/json
+
+{
+  "title": "Album 1",
+  "songs": ["66e1c9c36294aaa5b4e94d6b", "66e1cc4607e75ea93f294547"]
+}
+
+### get all albums
+GET http://localhost:3000/albums
+
+### get album by id
+GET http://localhost:3000/albums/66e1c9656294aaa5b4e94d69
